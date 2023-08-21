@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
-import Image from "mui-image";
+import Profile from '../../assets/profile-user.png'
 import { Link } from "react-router-dom";
 import { tokens } from "../../Theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
@@ -45,8 +45,6 @@ const Sidebar = () => {
   return (
     <Box
       sx={{
-        position: "sticky",
-        display: "flex",
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
         },
@@ -98,7 +96,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/profile-user.png`}
+                  src={Profile}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
