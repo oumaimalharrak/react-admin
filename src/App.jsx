@@ -2,7 +2,7 @@ import { ColorModeContext, useMode } from "./Theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
 import TopBar from './scenes/global/TopBar';
-import { Sidebar } from "react-pro-sidebar";
+import Sidebar from "./scenes/global/Sidebar";
 // import SideBar from './scenes/global/Sidebar';
 // import Dashboard from './scenes/dashboard'
 // import Team from './scenes/team'

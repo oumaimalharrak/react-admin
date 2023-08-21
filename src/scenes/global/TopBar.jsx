@@ -4,7 +4,7 @@ import { ColorModeContext, tokens } from "../../Theme";
 import InputBase from "@mui/material/InputBase";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import SettingOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 import { DarkModeOutlined } from "@mui/icons-material";
@@ -40,7 +40,7 @@ const TopBar = () => {
           <NotificationsNoneOutlinedIcon />
         </IconButton>
         <IconButton type="button">
-          <SettingOutlinedIcon />
+          <SettingsOutlinedIcon />
         </IconButton>
         <IconButton type="button">
           <PersonOutlinedIcon />
