@@ -59,14 +59,14 @@ const Sidebar = () => {
         },
         "& .pro-menu-item.active": {
           color: `${colors.greenAccent[500]} !important`,
-          backgroundColor: "transparent !important",        },
+          backgroundColor: "transparent !important"},
       }}
     >
-      <ProSidebar collapsed={isCollapsed}>
+      <ProSidebar collapsed={isCollapsed}   >
         <Menu iconShape="square">
-          <MenuItem
+        <MenuItem
             onClick={() => setIscollapsed(!isCollapsed)}
-            icon={isCollapsed ? <MenuOutlinedIcon /> :undefined}
+            icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             style={{
               margin: "10px 0 20px 0",
               color: colors.grey[100],
@@ -78,6 +78,7 @@ const Sidebar = () => {
                 justifyContent="space-between"
                 alignItems="center"
                 ml="15px"
+               
               >
                
                 <Typography variant="h3" color={colors.grey[100]}>
