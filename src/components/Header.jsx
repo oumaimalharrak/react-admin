@@ -4,7 +4,7 @@ import { tokens } from "../Theme";
 const Header = ({ title, subtitle }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  return;
+  return(
   <Box>
     <Typography
       variant="h2"
@@ -15,5 +15,7 @@ const Header = ({ title, subtitle }) => {
       {title}
     </Typography>
     <Typography variant="h5" color={colors.greenAccent[400]}>{subtitle}</Typography>
-  </Box>;
+  </Box>);
 };
+
+export default Header;

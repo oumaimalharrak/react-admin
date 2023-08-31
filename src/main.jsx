@@ -1,25 +1,23 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import App from './App'
 import './index.css'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import Dashboard from './scenes/dashboard/index.jsx'
+// import Header from './components/Header'
+import Dashboard from './scenes/dashboard'
+import Team from './scenes/team/Index'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App/>,
-    // children:[
-    //   {
-    //     index: true,
-    //     element:<Dashboard/>
-    //   }
-    // ]
-  }
-])
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <Router>
+          <Routes>
+            <Route path="/" element={<App/>}>
+              <Route path="home" element={<Dashboard/>} />
+              <Route path="team" element={<Team/>} />
+            </Route>
+          </Routes>
+    </Router>
   </React.StrictMode>,
+  document.getElementById('root')
 )
