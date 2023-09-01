@@ -13,7 +13,7 @@ ReactDOM.render(
     <Router>
           <Routes>
             <Route path="/" element={<App/>}>
-              <Route path="home" element={<Dashboard/>} />
+              <Route index element={<Dashboard/>} />
               <Route path="team" element={<Team/>} />
             </Route>
           </Routes>
