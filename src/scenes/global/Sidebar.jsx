@@ -139,7 +139,7 @@ const Sidebar = () => {
               />
             </Link>
             <Link to="contacts">
-              {" "}
+             
               <Item
                 title="Contacts information"
                 // to="/contacts"

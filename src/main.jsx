@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import App from './App'
 import './index.css'
-// import Header from './components/Header'
 import Dashboard from './scenes/dashboard'
 import Team from './scenes/team/Index'
 import Contacts from './scenes/contacts'
@@ -19,14 +18,13 @@ import Geography from './scenes/geography/index'
 
 
 
-
 ReactDOM.render(
   <React.StrictMode>
     <Router>
           <Routes>
             <Route path="/" element={<App/>}>
               <Route index element={<Dashboard/>} />
-              {/* <Route path='home' element={<Dashboard/>} /> */}
+              <Route path='home' element={<Dashboard/>} />
               <Route path="team" element={<Team/>} />
               <Route path="contacts" element={<Contacts/>} />
               <Route path="invoices" element={<Invoices/>} />
