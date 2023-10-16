@@ -14,6 +14,8 @@ import Bar from './scenes/bar/index'
 import Pie from './scenes/pie/index'
 import Line from './scenes/line/index'
 import Geography from './scenes/geography/index'
+// import Menu from './scenes/Menu'
+import Menus from './scenes/Menu'
 
 
 
@@ -36,6 +38,7 @@ ReactDOM.render(
               <Route path="pie" element={<Pie/>} />
               <Route path="line" element={<Line/>} />
               <Route path="geography" element={<Geography/>} />
+              <Route path="menu" element={<Menus/>} />
             </Route>
           </Routes>
     </Router>
